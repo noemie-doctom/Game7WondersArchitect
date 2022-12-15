@@ -2,7 +2,8 @@ package fr.isep.game7WonderArch.domain;
 
 public enum CardBack {
 
-	ExtraDeck(null), //
+	CentralDeck(null), //
+	
 	Alexandrie(Wonder.Alexandrie), //
 	Halicarnasse(Wonder.Halicarnasse),
 	Ephese(Wonder.Ephese), //
@@ -11,12 +12,12 @@ public enum CardBack {
 	Rhodes(Wonder.Rhodes), //
 	Gizeh(Wonder.Gizeh); //
 	
-	public final boolean extraDeck;
-	// set only when not from extraQuestionDeck
+	public final boolean centralDeck;
+	// set only when not centralDeck
 	public final Wonder wonderDeck;
 	
 	private CardBack(Wonder wonderDeck) {
-		this.extraDeck = (wonderDeck == null);
+		this.centralDeck = (wonderDeck == null);
 		this.wonderDeck = wonderDeck;
 	}
 	

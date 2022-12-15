@@ -6,22 +6,22 @@ package fr.isep.game7WonderArch.domain;
 public enum CardType {
 
 	// Material Cards
-	CardMaterialWood("material:wood", Material.Wood, "card-material-wood-lumberjack.png"),
-	CardMaterialPaper("material:paper", Material.Paper, "card-material-paper-women.png"),
-	CardMaterialBrick("material:brick", Material.Brick, "card-material-brick-women.png"),
-	CardMaterialStone("material:stone", Material.Stone, "card-material-stone-stonecutter.png"),
-	CardMaterialGlass("material:glass", Material.Glass, "card-material-glass-women.png"),
+	CardMaterialWood("material:wood", Material.Wood, "card-material-wood-lumberjack.png"), //
+	CardMaterialPaper("material:paper", Material.Paper, "card-material-paper-women.png"), //
+	CardMaterialBrick("material:brick", Material.Brick, "card-material-brick-women.png"), //
+	CardMaterialStone("material:stone", Material.Stone, "card-material-stone-stonecutter.png"), //
+	CardMaterialGlass("material:glass", Material.Glass, "card-material-glass-women.png"), //
 	// joker (mandatory replacing any material) 
-	CardMaterialGold("material:gold", Material.Gold, "card-material-gold-vizir.png"),
+	CardMaterialGold("material:gold", Material.Gold, "card-material-gold-vizir.png"), //
 	
 	// Science cards
-	CardScienceLaw("science:law", ScienceCategory.Law, "card-science-law.png"),
-	CardScienceMechanic("science:mechanic", ScienceCategory.Mechanic, "card-science-mechanic.png"),
-	CardScienceArchitect("science:architect", ScienceCategory.Architect, "card-science-architect.png"),
+	CardScienceLaw("science:law", ScienceCategory.Law, "card-progress-law.png"), //
+	CardScienceMechanic("science:mechanic", ScienceCategory.Mechanic, "card-progress-mechanic.png"), //
+	CardScienceArchitect("science:architect", ScienceCategory.Architect, "card-progress-architect.png"), //
 	
 	// War Cards
 	CardWar_barbarian("war:barbarian", 1, 1, "card-war-barbarian-1corn.png"), //
-	CardWar_centurion("war:centurion", 1, 0, "card-war-centurion.png"),  // png TOADD
+	CardWar_centurion("war:centurion", 1, 0, "card-war-centurion.png"),  //
 	CardWar_archer("war:archer", 1, 2, "card-war-archer-2corns.png"), //
 
 	// Polics Cards
@@ -78,7 +78,7 @@ public enum CardType {
 	}
 	// for Science card
 	private CardType(String cardDisplayName, ScienceCategory scienceCategory, String imageResource) {
-		this(cardDisplayName, CardCategory.ScienceCard, null, scienceCategory, 0, 0, 0, false, imageResource);
+		this(cardDisplayName, CardCategory.ProgressCard, null, scienceCategory, 0, 0, 0, false, imageResource);
 	}
 	// for War card
 	private CardType(String cardDisplayName, int shieldCount, int cornCount, String imageResource) {
