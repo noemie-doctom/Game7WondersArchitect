@@ -15,9 +15,9 @@ public enum CardType {
 	CardMaterialGold("material:gold", Material.Gold, "card-material-gold-vizir.png"), //
 	
 	// Science cards
-	CardScienceLaw("science:law", ScienceCategory.Law, "card-progress-law.png"), //
-	CardScienceMechanic("science:mechanic", ScienceCategory.Mechanic, "card-progress-mechanic.png"), //
-	CardScienceArchitect("science:architect", ScienceCategory.Architect, "card-progress-architect.png"), //
+	CardProgressLaw("progress:law", ProgressCategory.Law, "card-progress-law.png"), //
+	CardProgressMechanic("progress:mechanic", ProgressCategory.Mechanic, "card-progress-mechanic.png"), //
+	CardProgressArchitect("progress:architect", ProgressCategory.Architect, "card-progress-architect.png"), //
 	
 	// War Cards
 	CardWar_barbarian("war:barbarian", 1, 1, "card-war-barbarian-1corn.png"), //
@@ -39,7 +39,7 @@ public enum CardType {
 	public final Material material;
 
 	/** drawing on the card, meaningfull only cardCategory==Science */
-	public final ScienceCategory scienceCategory;
+	public final ProgressCategory scienceCategory;
 
 	/** number of shields, meaningfull only cardCategory==War */
 	public final int shieldCount;
@@ -57,7 +57,7 @@ public enum CardType {
 
 	private CardType(String cardDisplayName, CardCategory cardCategory, // 
 			Material material, // only when cardCategory==Material
-			ScienceCategory scienceCategory, // only when cardCategory==Science
+			ProgressCategory scienceCategory, // only when cardCategory==Science
 			int shieldCount, int cornCount, // only when cardCategory==War
 			int laurelCount, boolean cat, // only when cardCategory==Politic
 			String imageResource) {
@@ -77,7 +77,7 @@ public enum CardType {
 		this(cardDisplayName, CardCategory.MaterialCard, material, null, 0, 0, 0, false, imageResource);
 	}
 	// for Science card
-	private CardType(String cardDisplayName, ScienceCategory scienceCategory, String imageResource) {
+	private CardType(String cardDisplayName, ProgressCategory scienceCategory, String imageResource) {
 		this(cardDisplayName, CardCategory.ProgressCard, null, scienceCategory, 0, 0, 0, false, imageResource);
 	}
 	// for War card

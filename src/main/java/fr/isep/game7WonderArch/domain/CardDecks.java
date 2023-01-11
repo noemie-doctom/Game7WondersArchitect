@@ -24,9 +24,9 @@ public class CardDecks {
 			new CardTypeQuantity(2, CardType.CardMaterialGlass), //
 			new CardTypeQuantity(3, CardType.CardMaterialGold), // 2+1
 			// science
-			new CardTypeQuantity(1, CardType.CardScienceLaw), // 
-			new CardTypeQuantity(1, CardType.CardScienceMechanic), // 
-			new CardTypeQuantity(2, CardType.CardScienceArchitect), // 
+			new CardTypeQuantity(1, CardType.CardProgressLaw), // 
+			new CardTypeQuantity(1, CardType.CardProgressMechanic), // 
+			new CardTypeQuantity(2, CardType.CardProgressArchitect), // 
 			// war
 			new CardTypeQuantity(2, CardType.CardWar_barbarian), // 
 			new CardTypeQuantity(2, CardType.CardWar_centurion), // 
@@ -46,9 +46,9 @@ public class CardDecks {
 			new CardTypeQuantity(2, CardType.CardMaterialGlass), //
 			new CardTypeQuantity(2, CardType.CardMaterialGold), //
 			// science
-			new CardTypeQuantity(1, CardType.CardScienceLaw), // 
-			new CardTypeQuantity(2, CardType.CardScienceMechanic), // 
-			new CardTypeQuantity(1, CardType.CardScienceArchitect), // 
+			new CardTypeQuantity(1, CardType.CardProgressLaw), // 
+			new CardTypeQuantity(2, CardType.CardProgressMechanic), // 
+			new CardTypeQuantity(1, CardType.CardProgressArchitect), // 
 			// war
 			new CardTypeQuantity(2, CardType.CardWar_barbarian), // 
 			new CardTypeQuantity(2, CardType.CardWar_centurion), // 
@@ -68,9 +68,9 @@ public class CardDecks {
 			new CardTypeQuantity(2, CardType.CardMaterialGlass), //
 			new CardTypeQuantity(2+1, CardType.CardMaterialGold), // 2+1
 			// science
-			new CardTypeQuantity(1, CardType.CardScienceLaw), // 
-			new CardTypeQuantity(2, CardType.CardScienceMechanic), // 
-			new CardTypeQuantity(2, CardType.CardScienceArchitect), // 
+			new CardTypeQuantity(1, CardType.CardProgressLaw), // 
+			new CardTypeQuantity(2, CardType.CardProgressMechanic), // 
+			new CardTypeQuantity(2, CardType.CardProgressArchitect), // 
 			// war
 			new CardTypeQuantity(1, CardType.CardWar_barbarian), // 
 			new CardTypeQuantity(2, CardType.CardWar_centurion), // 
@@ -90,9 +90,9 @@ public class CardDecks {
 			new CardTypeQuantity(2, CardType.CardMaterialGlass), //
 			new CardTypeQuantity(3, CardType.CardMaterialGold), // 2+1
 			// science
-			new CardTypeQuantity(2, CardType.CardScienceLaw), // 
-			new CardTypeQuantity(1, CardType.CardScienceMechanic), // 
-			new CardTypeQuantity(1, CardType.CardScienceArchitect), // 
+			new CardTypeQuantity(2, CardType.CardProgressLaw), // 
+			new CardTypeQuantity(1, CardType.CardProgressMechanic), // 
+			new CardTypeQuantity(1, CardType.CardProgressArchitect), // 
 			// war
 			new CardTypeQuantity(2, CardType.CardWar_barbarian), // 
 			new CardTypeQuantity(2, CardType.CardWar_centurion), // 
@@ -112,9 +112,9 @@ public class CardDecks {
 			new CardTypeQuantity(1, CardType.CardMaterialGlass), // 2-1
 			new CardTypeQuantity(4, CardType.CardMaterialGold), // 2+2
 			// science
-			new CardTypeQuantity(1, CardType.CardScienceLaw), // 
-			new CardTypeQuantity(2, CardType.CardScienceMechanic), // 
-			new CardTypeQuantity(1, CardType.CardScienceArchitect), // 
+			new CardTypeQuantity(1, CardType.CardProgressLaw), // 
+			new CardTypeQuantity(2, CardType.CardProgressMechanic), // 
+			new CardTypeQuantity(1, CardType.CardProgressArchitect), // 
 			// war
 			new CardTypeQuantity(1, CardType.CardWar_barbarian), // 
 			new CardTypeQuantity(2, CardType.CardWar_centurion), // 
@@ -134,9 +134,9 @@ public class CardDecks {
 			new CardTypeQuantity(2, CardType.CardMaterialGlass), //
 			new CardTypeQuantity(3, CardType.CardMaterialGold), // 2+1
 			// science
-			new CardTypeQuantity(2, CardType.CardScienceLaw), // 
-			new CardTypeQuantity(1, CardType.CardScienceMechanic), // 
-			new CardTypeQuantity(2, CardType.CardScienceArchitect), // 
+			new CardTypeQuantity(2, CardType.CardProgressLaw), // 
+			new CardTypeQuantity(1, CardType.CardProgressMechanic), // 
+			new CardTypeQuantity(2, CardType.CardProgressArchitect), // 
 			// war
 			new CardTypeQuantity(1, CardType.CardWar_barbarian), // 
 			new CardTypeQuantity(2, CardType.CardWar_centurion), // 
@@ -156,9 +156,9 @@ public class CardDecks {
 			new CardTypeQuantity(2, CardType.CardMaterialGlass), //
 			new CardTypeQuantity(3, CardType.CardMaterialGold), // 2+1
 			// science
-			new CardTypeQuantity(2, CardType.CardScienceLaw), // 
-			new CardTypeQuantity(1, CardType.CardScienceMechanic), // 
-			new CardTypeQuantity(1, CardType.CardScienceArchitect), // 
+			new CardTypeQuantity(2, CardType.CardProgressLaw), // 
+			new CardTypeQuantity(1, CardType.CardProgressMechanic), // 
+			new CardTypeQuantity(1, CardType.CardProgressArchitect), // 
 			// war
 			new CardTypeQuantity(2, CardType.CardWar_barbarian), // 
 			new CardTypeQuantity(2, CardType.CardWar_centurion), // 
@@ -168,8 +168,8 @@ public class CardDecks {
 			new CardTypeQuantity(3, CardType.CardPolitic_cat), // 
 	});
 
-	/** Card Types x Quantities for extra Question Deck */
-	public static final List<CardTypeQuantity> deckCardQuantities_Extra = Arrays.asList(new CardTypeQuantity[] {
+	/** Card Types x Quantities for Central Deck */
+	public static final List<CardTypeQuantity> deckCardQuantities_Central = Arrays.asList(new CardTypeQuantity[] {
 			// material
 			new CardTypeQuantity(4, CardType.CardMaterialWood), //
 			new CardTypeQuantity(4, CardType.CardMaterialPaper), //
@@ -178,9 +178,9 @@ public class CardDecks {
 			new CardTypeQuantity(4, CardType.CardMaterialGlass), //
 			new CardTypeQuantity(6, CardType.CardMaterialGold), //
 			// science
-			new CardTypeQuantity(4, CardType.CardScienceLaw), // 
-			new CardTypeQuantity(4, CardType.CardScienceMechanic), // 
-			new CardTypeQuantity(4, CardType.CardScienceArchitect), // 
+			new CardTypeQuantity(4, CardType.CardProgressLaw), // 
+			new CardTypeQuantity(4, CardType.CardProgressMechanic), // 
+			new CardTypeQuantity(4, CardType.CardProgressArchitect), // 
 			// war
 			new CardTypeQuantity(4, CardType.CardWar_barbarian), // 
 			new CardTypeQuantity(4, CardType.CardWar_centurion), // 
@@ -189,4 +189,5 @@ public class CardDecks {
 			new CardTypeQuantity(4, CardType.CardPolitic_emperor), // 
 			new CardTypeQuantity(8, CardType.CardPolitic_cat), // 
 	});
+
 }
