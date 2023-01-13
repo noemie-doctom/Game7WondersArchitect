@@ -47,6 +47,7 @@ public class PlayerStateInternal {
 		this.trophyCounter = trophyCounter;
 		this.availableCards = availableCards;
 	}
+
 	
 	// ------------------------------------------------------------------------
 	

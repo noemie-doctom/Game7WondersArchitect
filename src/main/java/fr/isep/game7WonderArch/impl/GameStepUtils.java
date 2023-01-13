@@ -84,14 +84,14 @@ public class GameStepUtils {
 		if (count > 0) {
 			// selecting 1 card of this material
 			val nextUsedCounts = currUsedCounts.cloneBuilderWithSelect(material);
-			val nextRemainingRequiredTypes = remainingRequiredTypeCount--;
+			val nextRemainingRequiredTypes = remainingRequiredTypeCount - 1;
 			if (nextRemainingRequiredTypes == 0) {
 				// no need to recurse
 				val usedCards = nextUsedCounts.build();
 				res.add(new BuildWonderFragUsingCardsGameMode(frag, usedCards));
 			} else {
 				val nextIndex = currMaterialIndex + 1;
-				if (nextIndex <= materialExceptGolds.size()) {
+				if (nextIndex < materialExceptGolds.size()) {
 					// recurse
 					recursiveListMoveBuildWonderFragment_differentMaterials(res, frag,
 							nextIndex, nextUsedCounts, nextRemainingRequiredTypes, materialCardCounts);
@@ -101,7 +101,7 @@ public class GameStepUtils {
 		} 
 		// recurse when not selecting this material
 		val nextIndex = currMaterialIndex + 1;
-		if (nextIndex <= materialExceptGolds.size()) {
+		if (nextIndex < materialExceptGolds.size()) {
 			// recurse
 			recursiveListMoveBuildWonderFragment_differentMaterials(res, frag,
 					nextIndex, currUsedCounts, remainingRequiredTypeCount, materialCardCounts);
